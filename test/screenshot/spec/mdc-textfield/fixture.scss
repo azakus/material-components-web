@@ -61,3 +61,18 @@
     transform: translateX(.1px);
   }
 }
+
+.custom-height-text-field--default {
+  @include mdc-text-field-align-patch-all;
+  @include mdc-text-field-height(40px);
+}
+
+.custom-height-text-field--outlined {
+  @include mdc-text-field-align-patch-all;
+  @include mdc-text-field-outlined-height(40px);
+}
+
+.custom-text-field-align-patch--default,
+.custom-text-field-align-patch--outlined {
+  @include mdc-text-field-align-patch-all;
+}

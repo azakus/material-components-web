@@ -47,6 +47,9 @@
   @include mdc-states-focus-opacity(mdc-states-opacity($mdc-text-field-ink-color, focus));
   @include mdc-ripple-radius-bounded;
 
+  // Height
+  @include mdc-text-field-height($mdc-text-field-height);
+
   // Shape
   @include mdc-text-field-shape-radius(small);
 
@@ -69,7 +72,6 @@
   display: inline-flex;
   position: relative;
   box-sizing: border-box;
-  height: $mdc-text-field-height;
   overflow: hidden;
   /* @alternate */
   will-change: opacity, transform, color;
